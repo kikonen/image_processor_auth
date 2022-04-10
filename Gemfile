@@ -69,3 +69,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'jwt'
+gem 'oj'
+
+group :development, :test do
+  gem 'amazing_print'
+end

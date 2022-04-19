@@ -34,6 +34,12 @@ module ImageProcessorAuth
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # NOTE KI WORKAROUND for omniauth-rails_csrf_protection due to
+    # "ActionController::InvalidAuthenticityToken"
+    #
+    # https://github.com/cookpad/omniauth-rails_csrf_protection/issues/8
+    config.action_controller.per_form_csrf_tokens = false
+
     config.middleware.use LocalStore
   end
 end

@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     Rails.logger.info "OAUTH"
     Rails.logger.info user_info
 
-    cb_url = "../ui"
+    cb_url = "/ui"
     query = { email: user_info[:info][:email] }.to_query
     redirect_to "#{cb_url}?#{query}", allow_other_host: true
   end

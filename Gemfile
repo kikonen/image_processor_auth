@@ -73,6 +73,12 @@ end
 gem 'jwt'
 gem 'oj'
 gem 'curb'
+gem 'hamlit'
+
+# https://medium.com/@jenn.leigh.hansen/google-oauth2-for-rails-ba1bcfd1b863
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 group :development, :test do
   gem 'amazing_print'

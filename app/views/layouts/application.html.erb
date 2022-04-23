@@ -23,6 +23,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="m-4">
+      <%= render partial: 'layouts/flashes' %>
+      <%= yield %>
+    </div>
   </body>
 </html>

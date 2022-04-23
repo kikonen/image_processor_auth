@@ -11,7 +11,6 @@ class SessionsController < ApplicationController
     Rails.logger.info "OAUTH"
     Rails.logger.info user_info
 
-
     api = ApiRequest.new
     system_token = Token.create_system_token
     email = user_info[:info][:email]
@@ -32,6 +31,7 @@ class SessionsController < ApplicationController
     end
 
     unless user
+      flash[:alert] = "Authentication failed"
       redirect_to login_path
       return
     end

@@ -77,6 +77,9 @@ gem 'oj'
 gem 'curb'
 gem 'hamlit'
 
+# NOTE KI https://stackoverflow.com/questions/67773514/getting-warning-already-initialized-constant-on-assets-precompile-at-the-time
+gem "net-http"
+
 # https://medium.com/@jenn.leigh.hansen/google-oauth2-for-rails-ba1bcfd1b863
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
